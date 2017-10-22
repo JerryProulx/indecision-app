@@ -1,7 +1,7 @@
 //BIG button
 .big-button{
   width: 100%;
-  margin-bottom: $xlg-size;
+  margin-bottom: $md-size;
   padding: 2.4rem;
   background: $purple;
   border: none;
@@ -32,5 +32,11 @@
     border: none;
     color: $off-white;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .big-button{
+    margin-bottom: $xlg-size;
   }
 }

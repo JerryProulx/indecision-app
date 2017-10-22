@@ -1,7 +1,7 @@
 .header {
   background: $off-black;
   color: #FFF;
-  margin-bottom: $xlg-size;
+  margin-bottom: $md-size;
   padding: $md-size 0;
 
   &__title {
@@ -13,5 +13,11 @@
     color: $off-white;
     font-size: $md-size;
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .header {
+    margin-bottom: $xlg-size;
   }
 }
