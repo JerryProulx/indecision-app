@@ -1,0 +1,36 @@
+//BIG button
+.big-button{
+  width: 100%;
+  margin-bottom: $xlg-size;
+  padding: 2.4rem;
+  background: $purple;
+  border: none;
+  border-bottom: 0.6rem solid darken($purple, 10%);
+  color: #FFF;
+  font-weight: bold;
+  font-size: $lg-size;
+  cursor: pointer;
+
+  &:disabled{
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+
+//NORMAL button
+.button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 10%);
+  color: #FFF;
+  font-weight: 500;
+  padding: $sm-size;
+
+  &--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+  }
+}

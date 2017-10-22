@@ -18,7 +18,7 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ],
-        test: /\.scss$/
+        test: /\.s?css$/
       }]
   },
   devtool: 'cheat-module-eval-source-map',
@@ -31,3 +31,6 @@ module.exports = {
 //devtool: "define source map to help debuggin, webpack compiled code becomes readable in the console"
 
 //loader when webpack see a file with a certain extension, it does something with it
+
+
+//.s?css le point dinterrogation fait en sorte que le s est optionel, alors les .scss et les .css sont utitliser pour les memes rules

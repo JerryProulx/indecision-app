@@ -1,0 +1,36 @@
+.add-option {
+  &__error {
+    color: $off-white;
+    font-style: italic;
+    margin: $md-size 0 0 0;
+    padding: 0 $md-size;
+  }
+
+  &__form {
+    padding: $md-size;
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    color: $off-white;
+    flex-grow: 1;
+    margin: 0;
+    padding: $sm-size;
+  }
+}
+
+@media screen and (min-width: 45rem) {
+  .add-option {
+    &__form {
+      flex-direction: row;
+    }
+
+    &__input {
+      margin-right: $md-size;
+    }
+  }
+}
